@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif; /* More common sans-serif font */
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7; /* Lighter background */
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto; /* Add margin top/bottom */
+    background: #fff;
+    padding: 30px; /* Increase padding */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0056b3; /* A shade of blue for headers */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0056b3;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.input-section, .output-section {
+    margin-bottom: 30px; /* Increase spacing */
+    padding: 20px;
+    border: 1px solid #dcdcdc; /* Lighter border */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Slightly different background */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Spacing between form elements */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Spacing below label */
+    font-weight: bold;
+    color: #555;
+}
+
+select, input[type="range"] {
+    width: calc(100% - 22px);
+    padding: 10px; /* Increase padding */
+    margin-bottom: 5px; /* Less margin below input */
+    border: 1px solid #ccc; /* Lighter border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="range"] {
+    padding: 0; /* Remove padding for range input */
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px; /* More padding */
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px; /* Slightly larger font */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#prediction-output {
+    font-size: 1.4em; /* Larger font */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Center the prediction */
+    color: #007bff; /* Blue color for prediction */
+}
+
+.plot-container { /* Class for plot divs */
+    margin-top: 20px;
+    background-color: #fff; /* White background for plot area */
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+#recommendations ul {
+    list-style: disc; /* Use discs for list items */
+    padding-left: 20px; /* Add padding */
+}
+
+#recommendations li {
+    background-color: #e9f7ef; /* Light green background for recommendations */
+    padding: 12px; /* More padding */
+    margin-bottom: 8px; /* Spacing between list items */
+    border-radius: 5px;
+    border-left: 4px solid #28a745; /* Green border on the left */
+}
+
+.feature-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increase spacing */
+}
+
+.feature-input label {
+    flex: 1;
+    margin-right: 15px; /* More space */
+    min-width: 120px; /* Ensure minimum width for labels */
+}
+
+.feature-input input[type="range"] {
+    flex: 3;
+    margin-bottom: 0;
+}
+
+.slider-value { /* Class for slider value span */
+    flex: 0 0 60px; /* Slightly wider space for value */
+    text-align: right;
+    margin-left: 15px; /* More space */
+    font-weight: bold;
+    color: #555;
+}
